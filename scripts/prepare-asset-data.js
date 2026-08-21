@@ -6,7 +6,7 @@ import { categoriesFor, excludeCagetoriesFor } from '../src/utils/variables';
 async function prepareAssetData() {
   console.log('fetching data for sitemap and redirects...');
 
-  console.time('Time fetching data');
+  console.time('Time fetching data'); //test
 
   const lessons = await getAsset('LESSON,ARTICLE', { exclude_category: excludeCagetoriesFor.lessons, expand: 'technologies' }, 'lesson');
   const excersises = await getAsset('EXERCISE', { expand: 'technologies' }, 'excersise');
